@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Piotr Głuchowski">
+    <meta name="description" content="7 Najlepszych Piłkarzy FC Barcelony">
+    <meta name="keywords" content="FC Barcelona, Messi, Piłka nożna, Historia">
+    <link rel="icon" href="img/738657.png">
+    <title>Ankieta</title>
+    <link rel="stylesheet" href="styl.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+             <a href="index.html"><img src="img/FC_Barcelona_(crest).png" class="logo-img"></a>
+             <input type="checkbox" id="menu-toggle"><label for="menu-toggle" class="menu-icon">&#9776;</label>
+             <nav>
+                <ul><li><a href="index.html">Strona Główna</a></li>
+                <li><a href="galeria1.html">Galeria</a></li>
+                <li><a href="ankieta.html">Ankieta</a></li>
+                <li><a href="media.html">Media</a></li>
+                <li><a href="wiecej.html">Więcej Info</a></li>
+                </ul>
+            </nav>
+        </div>  
+    </header>
+
+    <div class="container">
+        <main>
+            <h2>Ankieta Kibica</h2>
+            <form action="#" method="post">
+                
+                <div class="form-group">
+                    <label for="name">Twoje Imię:</label>
+                    <input type="text" id="name" name="name" placeholder="Wpisz imię">
+                </div>
+
+                <div class="form-group">
+                    <label for="age">Twój Wiek:</label>
+                    <input type="number" id="age" name="age" min="5" max="100">
+                </div>
+
+                <div class="form-group">
+                    <label>Kto jest Twoim ulubionym piłkarzem z wymienionych na stronie?:</label>
+                    <input type="radio" id="p1" name="player" value="Messi"><label for="p1" style="display:inline">Messi</label><br>
+                    <input type="radio" id="p2" name="player" value="Xavi"><label for="p2" style="display:inline">Xavi</label><br>
+                    <input type="radio" id="p3" name="player" value="Iniesta"><label for="p3" style="display:inline">Iniesta</label><br>
+                    <input type="radio" id="p4" name="player" value="Cruyff"><label for="p4" style="display:inline">Johan Cruyff</label><br>
+                    <input type="radio" id="p5" name="player" value="Kubala"><label for="p5" style="display:inline">Ladislao Kubala</label><br>
+                    <input type="radio" id="p6" name="player" value="Puyol"><label for="p6" style="display:inline">Carles Puyol</label><br>
+                    <input type="radio" id="p7" name="player" value="Ronaldinho"><label for="p7" style="display:inline">Ronaldinho</label><br>
+                </div>
+
+                <div class="form-group">
+                    <label for="era">Najlepsza era Barcy?:</label>
+                    <select id="era" name="era">
+                        <option value="dreamteam">Dream Team (Cruyff)</option>
+                        <option value="pep">Era Guardioli</option>
+                        <option value="lucho">Era Enrique (MSN)</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Jakie mecze oglądasz?:</label>
+                    <input type="checkbox" id="liga" name="watch" value="Liga"><label for="liga" style="display:inline">La Liga</label><br>
+                    <input type="checkbox" id="ucl" name="watch" value="UCL"><label for="ucl" style="display:inline">Liga Mistrzów</label>
+                </div>
+
+
+                <button type="submit">Wyślij</button>
+                <button type="reset" style="background-color: #555;">Wyczyść</button>
+            </form>
+        </main>
+        <aside><h3>Info</h3><p>Ankieta jest anonimowa.</p></aside>
+    </div>
+
+    <footer> <p>&copy; 2025 Piotr Głuchowski 2tb</p></footer>
+</body>
+</html>
